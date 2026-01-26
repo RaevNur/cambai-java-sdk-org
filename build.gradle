@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+group = 'ai.camb'
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.17.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.17.0'
+    
+    // Add JUnit for testing if needed
+    testImplementation 'junit:junit:4.13.2'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', '.'] // Including root for generated files if they are there
+        }
+    }
+}

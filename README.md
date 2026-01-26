@@ -12,7 +12,27 @@ The official Java SDK for interacting with Camb AI's powerful voice and audio ge
 
 ## 📦 Installation
 
-To be added (Maven/Gradle instructions).
+### Gradle
+
+Add the dependency to your `build.gradle` file:
+
+```groovy
+dependencies {
+    implementation 'ai.camb:cambai-java-sdk:0.0.1'
+}
+```
+
+### Maven
+
+Add the dependency to your `pom.xml` file:
+
+```xml
+<dependency>
+    <groupId>ai.camb</groupId>
+    <artifactId>cambai-java-sdk</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
 
 ## 🔑 Authentication & Accessing Clients
 
