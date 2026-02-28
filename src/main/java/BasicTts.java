@@ -1,6 +1,4 @@
-package examples;
 
-import CambApiClient;
 import core.ClientOptions;
 import resources.texttospeech.requests.CreateStreamTtsRequestPayload;
 import resources.texttospeech.types.CreateStreamTtsRequestPayloadLanguage;

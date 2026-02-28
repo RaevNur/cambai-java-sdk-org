@@ -1,6 +1,4 @@
-package examples;
 
-import CambApiClient;
 import resources.texttovoice.requests.CreateTextToVoiceRequestPayload;
 import types.GetTextToVoiceResultOut;
 
