@@ -70,7 +70,7 @@ public class Main {
             .text("Hello! Welcome to Camb.ai text-to-speech.")
             .voiceId(147320)
             .language(CreateStreamTtsRequestPayloadLanguage.EN_US)
-            .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS_FLASH)
+            .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS8FLASH)
             .build());
 
         // Save to file
@@ -110,14 +110,14 @@ Camb.ai offers three MARS models optimized for different use cases:
 <Tabs>
   <Tab title="MARS Flash">
     ```java
-    .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS_FLASH)
+    .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS8FLASH)
     ```
 
     **Best for:** Real-time voice agents, low-latency applications
 
     **Sample rate:** 22.05kHz
   </Tab>
-  <Tab title="MARS Pro">
+  {/* <Tab title="MARS Pro">
     ```java
     .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS_PRO)
     ```
@@ -125,10 +125,10 @@ Camb.ai offers three MARS models optimized for different use cases:
     **Best for:** Audio production, high-quality content
 
     **Sample rate:** 48kHz
-  </Tab>
+  </Tab> */}
   <Tab title="MARS Instruct">
     ```java
-    .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS_INSTRUCT)
+    .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS8INSTRUCT)
     .userInstructions("Speak in a warm, friendly tone")
     ```
 
