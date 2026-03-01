@@ -18,7 +18,7 @@ public class DubbingExample {
         System.out.println("Starting Dubbing Task...");
 
         try {
-            var result = client.dub().createDub(EndToEndDubbingRequestPayload.builder()
+            var result = client.dub().endToEndDubbing(EndToEndDubbingRequestPayload.builder()
                 .videoUrl("https://example.com/video.mp4")
                 .sourceLanguage(1)
                 .targetLanguages(Collections.singletonList(2))
