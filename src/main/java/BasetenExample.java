@@ -24,8 +24,8 @@ public class BasetenExample {
             // In production, extend payload or use context.
             InputStream audioStream = provider.tts(CreateStreamTtsRequestPayload.builder()
                 .text("Hello from Java Custom Provider via Baseten!")
-                .voiceId(0) // Ignored
                 .language(CreateStreamTtsRequestPayloadLanguage.EN_US) 
+                .voiceId(0) // Ignored
                 .build(), null);
 
             File outputFile = new File("baseten_output.mp3");

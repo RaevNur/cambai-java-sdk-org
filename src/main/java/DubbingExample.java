@@ -20,8 +20,8 @@ public class DubbingExample {
         try {
             var result = client.dub().createDub(EndToEndDubbingRequestPayload.builder()
                 .videoUrl("https://example.com/video.mp4")
-                .sourceLanguage(CreateStreamTtsRequestPayloadLanguage.EN_US)
-                .targetLanguages(Collections.singletonList(CreateStreamTtsRequestPayloadLanguage.FR_FR))
+                .sourceLanguage(1)
+                .targetLanguages(Collections.singletonList(2))
                 .build());
 
             System.out.println("Dubbing Task Created. Details: " + result);

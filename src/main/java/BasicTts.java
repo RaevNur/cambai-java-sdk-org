@@ -25,10 +25,8 @@ public class BasicTts {
         try {
             InputStream audioStream = client.textToSpeech().tts(CreateStreamTtsRequestPayload.builder()
                 .text("Hello from Camb AI! This is a Java SDK test.")
-                .voiceId(20303)
-                // Using EN_US from API enum. In a real helper, we'd map types.Languages.EN_US.getValue() if needed
                 .language(CreateStreamTtsRequestPayloadLanguage.EN_US) 
-                .speechModel(CreateStreamTtsRequestPayloadSpeechModel.MARS_PRO)
+                .voiceId(20303)
                 .build());
 
             File outputFile = new File("output.mp3");
