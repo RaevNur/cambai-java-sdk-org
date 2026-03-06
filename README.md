@@ -69,6 +69,7 @@ ITtsProvider ttsProvider = new BasetenProvider(
 InputStream audioStream = ttsProvider.tts(CreateStreamTtsRequestPayload.builder()
     .text("Hello from Java via Baseten Mars8-Flash!")
     .language(CreateStreamTtsRequestPayloadLanguage.EN_US)
+    .voiceId(1) // Required by the SDK's staged builder; ignored by the Baseten provider
     .build(), null);
 ```
 

@@ -61,6 +61,7 @@ public class BasetenExample {
             CreateStreamTtsRequestPayload request = CreateStreamTtsRequestPayload.builder()
                 .text("Hello. This is speech generated via a Baseten Mars8-Flash custom hosting provider.")
                 .language(CreateStreamTtsRequestPayloadLanguage.EN_US)
+                .voiceId(1) // Required by the SDK's staged builder; ignored by the Baseten provider
                 .build();
 
             InputStream audioStream = basetenProvider.tts(request, null);
